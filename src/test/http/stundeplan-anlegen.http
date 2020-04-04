@@ -2,7 +2,7 @@ POST http://localhost:8080/stundenplan
 Content-Type: application/json
 
 {
-  "schueler": "Benjamin Matthias Haschka",
+  "schueler": "Benjamin Haschka",
   "von": "2/2020",
   "bis": "7/2020"
 }

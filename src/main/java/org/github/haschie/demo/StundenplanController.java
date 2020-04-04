@@ -2,16 +2,14 @@ package org.github.haschie.demo;
 
 import org.github.haschie.demo.model.Stundenplan;
 import org.github.haschie.demo.model.StundenplanRepository;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import javax.persistence.EntityNotFoundException;
-import javax.websocket.server.PathParam;
 import java.util.UUID;
 
 @RestController
@@ -28,7 +26,7 @@ public class StundenplanController {
 
     @PostMapping
     @ResponseBody
-    public ResponseEntity post(@org.jetbrains.annotations.NotNull @RequestBody StundenplanDTO dto, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity post(@NotNull @RequestBody StundenplanDTO dto, UriComponentsBuilder uriBuilder) {
 
         final UUID uuid = UUID.randomUUID();
         Stundenplan entity = new Stundenplan(uuid, dto.getSchueler(), dto.getVon(), dto.getBis());
