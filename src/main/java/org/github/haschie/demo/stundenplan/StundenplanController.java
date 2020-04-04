@@ -1,7 +1,7 @@
-package org.github.haschie.demo;
+package org.github.haschie.demo.stundenplan;
 
-import org.github.haschie.demo.model.Stundenplan;
-import org.github.haschie.demo.model.StundenplanRepository;
+import org.github.haschie.demo.stundenplan.model.Stundenplan;
+import org.github.haschie.demo.stundenplan.model.StundenplanRepository;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

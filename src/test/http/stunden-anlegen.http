@@ -1,0 +1,11 @@
+POST http://localhost:8080/stunden
+Content-Type: application/json
+
+{
+  "stunde": 1,
+  "wochentag": "Montag",
+  "fach": "Deutsch",
+  "lehrer": "Guddorf"
+}
+
+###

@@ -1,4 +1,4 @@
-package org.github.haschie.demo.model;
+package org.github.haschie.demo.stundenplan.model;
 
 import org.springframework.data.repository.CrudRepository;
 

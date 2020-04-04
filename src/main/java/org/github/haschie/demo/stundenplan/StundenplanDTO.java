@@ -1,4 +1,4 @@
-package org.github.haschie.demo;
+package org.github.haschie.demo.stundenplan;
 
 public class StundenplanDTO {
     private String schueler;
